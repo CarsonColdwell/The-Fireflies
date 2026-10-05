@@ -1,0 +1,389 @@
+/* ========================================
+   THE FIREFLIES
+   Main Stylesheet
+   ======================================== */
+
+
+/* ---------- GENERAL PAGE ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #151713;
+    color: #e8e5dc;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* ---------- STORY CONTAINER ---------- */
+
+.story-page {
+    width: 90%;
+    max-width: 850px;
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    padding: 100px 20px 140px;
+}
+
+
+/* ---------- LOCATION ---------- */
+
+.location {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-align: center;
+
+    color: #aaa99f;
+
+    margin: 0 0 35px;
+}
+
+
+/* ---------- HEADINGS ---------- */
+
+h1 {
+    font-size: 52px;
+    font-weight: normal;
+    text-align: center;
+
+    margin: 0 0 70px;
+
+    letter-spacing: 1px;
+}
+
+
+/* ---------- STORY TEXT ---------- */
+
+.story-text {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.story-text p {
+    font-size: 19px;
+    line-height: 1.8;
+
+    margin: 0 0 30px;
+}
+
+
+/* ---------- CHOICES ---------- */
+
+.choices {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+
+    max-width: 650px;
+
+    margin: 90px auto 0;
+}
+
+.choices a {
+    display: block;
+
+    color: #e8e5dc;
+    text-decoration: none;
+
+    border-left: 2px solid #666b61;
+
+    padding: 14px 20px;
+
+    transition:
+        border-color 0.3s ease,
+        padding-left 0.3s ease,
+        color 0.3s ease;
+}
+
+.choices a:hover {
+    border-left-color: #d6e68a;
+
+    color: #d6e68a;
+
+    padding-left: 30px;
+}
+
+
+/* ========================================
+   OPENING
+   ======================================== */
+
+.opening {
+    background-color: #151713;
+}
+
+.opening h1 {
+    font-size: 62px;
+}
+
+
+/* ========================================
+   CABIN
+   ======================================== */
+
+.cabin-page {
+    background-color: #151713;
+}
+
+
+/* ========================================
+   WOODS
+   ======================================== */
+
+.woods-page {
+    background-color: #10140f;
+}
+
+.woods-page .location {
+    color: #8e987e;
+}
+
+.woods-page h1 {
+    color: #d9dfc9;
+}
+
+.woods-page .story-text p {
+    color: #d8d9d0;
+}
+
+
+/* ========================================
+   HORROR
+   ======================================== */
+
+.horror-page {
+    background-color: #090b09;
+}
+
+.horror-page .location {
+    color: #777c72;
+}
+
+.horror-page h1 {
+    color: #d2d0c8;
+}
+
+.horror-page .story-text p {
+    color: #c6c5bd;
+}
+
+.horror-page .choices a {
+    border-left-color: #4d514b;
+}
+
+
+/* ========================================
+   ENDING
+   ======================================== */
+
+.ending-page {
+    background-color: #0b0c0b;
+}
+
+.ending-page h1 {
+    color: #d0cec5;
+}
+
+.ending {
+    margin-top: 70px !important;
+
+    font-style: italic;
+
+    color: #b6b4aa;
+}
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .story-page {
+        width: 92%;
+
+        padding:
+            60px
+            15px
+            100px;
+    }
+
+    h1 {
+        font-size: 38px;
+
+        margin-bottom: 50px;
+    }
+
+    .opening h1 {
+        font-size: 46px;
+    }
+
+    .story-text p {
+        font-size: 17px;
+        line-height: 1.7;
+
+        margin-bottom: 25px;
+    }
+
+    .choices {
+        margin-top: 60px;
+    }
+
+    /* ========================================
+   CREATURE PAGE
+   ======================================== */
+
+.horror-page {
+    background-color: #070807;
+
+    min-height: 100vh;
+
+    transition: background-color 1s ease;
+}
+
+
+/* ---------- CREATURE IMAGE ---------- */
+
+.creature-image {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto 80px;
+
+    overflow: hidden;
+
+    opacity: 0.65;
+}
+
+.creature-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    filter:
+        brightness(35%)
+        contrast(130%)
+        saturate(40%);
+
+    opacity: 0.7;
+}
+
+
+/* ---------- HORROR TEXT ---------- */
+
+.horror-page .story-text {
+    max-width: 620px;
+}
+
+.horror-page .story-text p {
+    color: #c7c6bf;
+
+    font-size: 19px;
+
+    line-height: 1.9;
+}
+
+
+/* ---------- SHORT SENTENCES ---------- */
+
+.short-line {
+    margin-top: 65px !important;
+    margin-bottom: 65px !important;
+
+    font-size: 22px !important;
+
+    color: #dedcd3 !important;
+}
+
+
+/* ---------- HORROR CHOICES ---------- */
+
+.horror-choices {
+    margin-top: 110px;
+}
+
+.horror-choices a {
+    border-left-color: #393d37;
+}
+
+.horror-choices a:hover {
+    border-left-color: #b7c58c;
+
+    color: #b7c58c;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 600px) {
+
+    .creature-image {
+        margin-bottom: 60px;
+    }
+
+    .horror-page .story-text p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+}
+
+/* ========================================
+   RETURN PAGE
+   ======================================== */
+
+.return-page {
+    background-color: #11130f;
+}
+
+.return-page .location {
+    color: #9a9b91;
+}
+
+.return-page h1 {
+    color: #d9d7ce;
+}
+
+.return-page .story-text p {
+    color: #d0cec5;
+}
+
+/* ========================================
+   SEARCH PAGE
+   ======================================== */
+
+.ending-page {
+    background-color: #0d100d;
+}
+
+.ending-page .location {
+    color: #7f8978;
+}
+
+.ending-page h1 {
+    color: #d1d3c9;
+}
+
+.ending-page .story-text p {
+    color: #c4c6bd;
+}
+
+.ending-page .choices a:hover {
+    border-left-color: #aebc8b;
+    color: #aebc8b;
+}
+
+}
